@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PearlMop | Professional Cleaning Services</title>
+<style>
+   <meta name="description" content="Reliable residential and commercial cleaning in Lagos. Book today for a spotless space!">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    /* === Reset & Base === */
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333 background:#A3BFC2; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* === Layout === */
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    section { padding: 4rem 0; }
+    .flex { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
+    .text-center { text-align: center; }
+
+    /* === Header & Nav === */
+    header { background:#6E8A86; color: #fff; position: sticky; top:0; z-index:10; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 100; }
+    .logo { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { font-weight: 600; transition: opacity .2s; }
+    .nav-links a:hover { opacity: .8; }
+    .mobile-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+
+    /* === Hero === */
+    .hero { background: var(--teal-300); color: #fff; }url('https://images.unsplash.com/photo-1558618666-fcd25b5c38f9?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color:#fff; text-align:center; padding:6rem 0; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: .5rem; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin: auto; margin-bottom: 1.5rem; }
+    .btn-primary { background: #1a5fb4; } padding:.75rem 1.5rem; border-radius:50px; font-weight:600; transition:background .3s; }
+    .btn:hover { background:#e6b800; }
+
+    /* === Services === */
+    .services { background:#fff; }
+    .service-card { flex:1 1 280px; background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,.05); text-align:center; }
+    .service-card h3 { margin:1rem 0 .5rem; color:#1a5fb4; }
+
+    /* === About === */
+    .about { background:#f0f4f8; }
+    .about img { border-radius:8px; }
+
+    /* === Testimonials === */
+    .testimonials { background:#fff; }
+    .testimonial { flex:1 1 300px; background:#f9f9f9; padding:1.5rem; border-radius:8px; font-style:italic; }
+    .testimonial cite { display:block; margin-top:1rem; font-weight:600; font-style:normal; color:#1a5fb4; }
+
+    /* === Contact === */
+    .contact { background:#800080; color:#fff; }
+    .contact form { max-width:600px; margin:auto; display:grid; gap:1rem; }
+    .contact input, .contact textarea { padding:.75rem; border:none; border-radius:4px; font:inherit; }
+    .contact button { background:#ffcc00; color:#1a5fb4; border:none; padding:.75rem; border-radius:50px; font-weight:600; cursor:pointer; }
+    .contact button:hover { background:#e6b800; }
+
+    /* === Footer === */
+    footer { background:#111; color:#ccc; text-align:center; padding:2rem 0; font-size:.9rem; }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+      .nav-links { display:none; flex-direction:column; position:absolute; top:100%; left:0; width:100%; background:#1a5fb4; padding:1rem 0; }
+      .nav-links.active { display:flex; }
+      .mobile-toggle { display:block; }
+    }
+
+    :root {
+    --pearlmop-teal:#6E8A86;
+  }
+  
+  body {
+    background-color: var(--pearlmop-teal);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo {
+    background: var(--pearlmop-teal);
+    padding: 40px;
+    text-align: center;
+  }
+ </style>
+</head>
+
+<body>
+
+ <!-- ADD YOUR LOGO HERE -->
+  <div class="logo">
+    <img src="logo.png" width="150">
+
+    </div>
+  <!-- End Logo -->
+
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">PearlMop</div>
+        <div class="desktop-toggle">☰</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Spotless Spaces, Every Time</h1>
+      <p>Professional residential & commercial cleaning in <strong>Lagos</strong>. Reliable, eco-friendly, and affordable.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- ======= SERVICES ======= -->
+  <section id="services" class="services">
+    <div class="container text-center">
+      <h2>Our Cleaning Services</h2>
+      <div class="flex" style="margin-top:2rem;">
+        <div class="service-card">
+          <img src="C:\Users\ogeel\OneDrive\Desktop\public_html\Ikpye house cleaning 2.jpg"alt="House cleaning">
+          <h3>Residential Cleaning</h3>
+          <p>Deep cleaning, regular upkeep, move-in/move-out – we handle it all.</p>
+        </div>
+        <div class="service-card">
+          <img src="C:\Users\ogeel\OneDrive\Desktop\public_html\Ikoye house cleaning.jpg">
+          <h3>Commercial Cleaning</h3>
+          <p>Offices, retail, medical facilities – keep your business shining.</p>
+        </div>
+        <div class="service-card">
+          <img src="C:\Users\ogeel\OneDrive\Desktop\public_html\upholstery 1 cleaning.jpg">
+          <h3>Specialty Services</h3>
+          <p>Carpet, upholstery, windows, post-construction cleanup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section id="about" class="about">
+    <div class="container flex">
+      <div style="flex:1;">
+        <h2>Why Choose PearlMop?</h2>
+        <ul style="margin-top:1rem; line-height:1.8;">
+          <li>✔ Fully insured & bonded</li>
+          <li>✔ Eco-friendly products</li>
+          <li>✔ Affordability & experienced</li>
+          <li>✔ 100% satisfaction guarantee</li>
+          <li>✔ Flexible scheduling</li>
+        </ul>
+      </div>
+      <div style="flex:1;">
+        <img src="C:\Users\ogeel\OneDrive\Desktop\public_html\Team cleaning  1.png"alt="Cleaning team">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section id="testimonials" class="testimonials">
+    <div class="container text-center">
+      <h2>What Our Clients Say</h2>
+      <div class="flex" style="margin-top:2rem;">
+        <div class="testimonial">
+          <p>“PearlMop transformed our office. The team is professional and thorough!”</p>
+          <cite>— Oliver J., Office Manager</cite>
+        </div>
+        <div class="testimonial">
+          <p>“Best house cleaning service we’ve ever had. They even cleaned the oven!”</p>
+          <cite>— Isreal & Elizabeth O.</cite>
+        </div>
+        <div class="testimonial">
+          <p>“Reliable, friendly, and eco-friendly. Highly recommend!”</p>
+          <cite>— Maria O.</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section id="contact" class="contact">
+    <div class="container text-center">
+      <h2>Get Your Free Quote</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone">
+        <textarea name="message" rows="4" placeholder="Tell us about your cleaning needs..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="margin-top:1.5rem;">
+        <strong>Call:</strong> <a href="tel:+2349041132588" style="color:#ffcc00;">(234) 904-113-2588</a>  
+        • <strong>Email:</strong> <a href="mailto:info@pearlmop.com" style="color:#ffcc00;">info@pearlmop.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> PearlMop. All rights reserved. | <a href="#privacy" style="color:#ffcc00;">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    document.querySelector('.mobile-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
